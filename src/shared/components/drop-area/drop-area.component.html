@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="drop-container"  appDnd (fileDropped)="onFileDropped($event)">
+    <input
+    type="file"
+    #fileDropRef
+    id="fileDropRef"
+    multiple
+    (change)="fileBrowseHandler($event)"
+  />
+    <div class="instructions">
+      <div class="image-container">
+        <img src="../../assets/cloud.png" alt="upload">
+      </div>
+      <h1>Arrastra un archivo</h1>
+      <h2>o busca un archivo existente en el explorador</h2>
+      <button id="upload-button">Upload File</button>
+    </div>
+  </div>
+</div>
